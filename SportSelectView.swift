@@ -11,13 +11,17 @@ import SwiftUI
 struct SportSelectView: View {
     var body: some View {
         VStack {
-            Button("Basketball") {
-                NavigationView{
-                    NavigationLink(destination: BasketballView(), label: BasketballView)
+            HStack{
+                Button("Basketball") {
+                    //                NavigationView{
+                    //                    NavigationLink(destination: BasketballView(), label: BasketballView)
+                    //                }
+                    
                 }
-                
+                Button("Golf") {
+                    
+                }
             }
         }
     }
 }
-
