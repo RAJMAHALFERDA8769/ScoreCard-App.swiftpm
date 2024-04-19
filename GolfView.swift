@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct GolfView: View {
     var body: some View {
-        Text("Golf")
+        VStack {
+            Text("HI")
+            }
+        }
     }
-}
