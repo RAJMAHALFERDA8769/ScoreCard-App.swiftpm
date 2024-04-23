@@ -15,9 +15,11 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Button(action: {
-                }) {
-                    Text("Scoreboard")
+                NavigationStack
+                {
+                    NavigationLink("Scoreboard") {
+                        SportSelectView()
+                    }
                         .font(.system(size: 40))
                         .font(.title)
                         .foregroundColor(.white)

@@ -12,22 +12,36 @@ struct SportSelectView: View {
     var body: some View {
         VStack {
             HStack{
-                Button(action: {
-                })  {
-                    Text("Basketball")
-                        .font(.system(size: 40))
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.gray)
-                        .cornerRadius(10)
+                NavigationStack
+                {
+                    NavigationLink("ScoreCard") {
+                        BasketballView()
+                    }
+                    .font(.system(size: 40))
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.gray)
+                    .cornerRadius(10)
                 }
                 .padding(.bottom, 20)
                 
-                Button("Golf") {
-                    
-                }
+                //                NavigationLink("Golf") {
+                //                    GolfView()
+                //                }
+                //                            .font(.system(size: 40))
+                //                            .font(.title)
+                //                            .foregroundColor(.white)
+                //                            .padding()
+                //                            .background(Color.gray)
+                //                            .cornerRadius(10)
+                //                    }
+                .padding(.bottom, 20)
+                
+                
             }
         }
     }
 }
+    
+
