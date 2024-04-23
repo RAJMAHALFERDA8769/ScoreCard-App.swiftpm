@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct GolfView: View {
-    var body: some View {
-        Text("Golf")
-    }
-}
+//struct GolfView: View {
+//    var body: some View {
+//        Text("Golf")
+//    }
+//}

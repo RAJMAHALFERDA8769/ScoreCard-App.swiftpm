@@ -13,7 +13,7 @@ struct SportSelectView: View {
         VStack {
             Button("Basketball") {
                 NavigationView{
-                    NavigationLink(destination: BasketballView(), label: BasketballView)
+       //             NavigationLink(destination: BasketballView(), label: BasketballView)
                 }
                 
             }
