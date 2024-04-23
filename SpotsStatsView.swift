@@ -7,3 +7,13 @@
 
 import Foundation
 import SwiftUI
+
+struct SportStatsView: View {
+    var body: some View {
+        VStack {
+            
+            }
+        }
+    }
+    
+
