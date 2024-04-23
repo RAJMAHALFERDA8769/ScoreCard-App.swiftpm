@@ -8,7 +8,7 @@ struct ContentView: View {
             
             VStack {
                 Text("KeepScore")
-                    .font(.system(size: 80))
+                    .font(.system(size: 70))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .padding(.top, 100)
