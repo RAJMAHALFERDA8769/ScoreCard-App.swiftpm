@@ -12,6 +12,8 @@ struct BasketballView: View {
     var body: some View {
         VStack {
             Text("HI")
+            
+            Text("YO")
             }
         }
     }
