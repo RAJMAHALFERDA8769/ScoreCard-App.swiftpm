@@ -29,9 +29,11 @@ struct ContentView: View {
                 }
                 .padding(.bottom, 20)
                 
-                Button(action: {
-                }) {
-                    Text(" Statistics    ")
+                NavigationStack
+                {
+                    NavigationLink("View Past Games") {
+                        SportStatsView()
+                    }
                         .font(.system(size: 40))
                         .font(.title)
                         .foregroundColor(.white)
