@@ -20,7 +20,7 @@ struct TeamView: View {
                 .padding()
             NavigationView {
                 VStack {
-                    NavigationLink("Go To Player View") {
+                    NavigationLink("Next") {
                         PlayerView()
                     }
                     
