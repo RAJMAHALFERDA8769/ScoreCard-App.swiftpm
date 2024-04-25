@@ -25,20 +25,20 @@ struct SportSelectView: View {
                     .cornerRadius(10)
                 }
                 .padding(.bottom, 20)
-                NavigationStack
-                {
-                    NavigationLink("Home") {
-                        ScoreboardView()
-                    }
-                    .font(.system(size: 40))
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.gray)
-                    .cornerRadius(10)
-                }
-                .padding(.bottom, 20)
-            }
+                                NavigationStack
+                                {
+                                    NavigationLink("Home") {
+                                        ScoreboardView()
+                                    }
+                                    .font(.system(size: 40))
+                                    .font(.title)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(Color.gray)
+                                    .cornerRadius(10)
+                                }
+                                .padding(.bottom, 20)
+                            }
                 
                 //                NavigationLink("Golf") {
                 //                    GolfView()
