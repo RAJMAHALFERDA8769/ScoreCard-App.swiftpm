@@ -14,14 +14,14 @@ struct SportSelectView: View {
             HStack{
                 NavigationStack
                 {
-                    NavigationLink("ScoreCard") {
+                    NavigationLink("Begin") {
                     TeamView()
                     }
                     .font(.system(size: 40))
                     .font(.title)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color.gray)
+                    .background(Color.blue)
                     .cornerRadius(10)
                 }
                 .padding(.bottom, 20)
@@ -34,7 +34,7 @@ struct SportSelectView: View {
                     .font(.title)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color.gray)
+                    .background(Color.blue)
                     .cornerRadius(10)
                 }
                 .padding(.bottom, 20)

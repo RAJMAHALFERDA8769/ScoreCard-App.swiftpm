@@ -8,12 +8,7 @@
 import Foundation
 import SwiftUI
 struct Player {
-    var name: String
-    var blocks: Int
-    var assists: Int
-    var rebounds: Int
-    var fouls: Int
-    var points: Int
+    
 }
 
 
@@ -22,8 +17,8 @@ struct Team {
     var players: [Player]
 }
 struct TeamView: View {
-    @State private var team1Name = ""
-    @State private var team2Name = ""
+    @State var team1Name = ""
+    @State var team2Name = ""
    
     var body: some View {
         VStack {
@@ -31,8 +26,17 @@ struct TeamView: View {
                 .padding()
             TextField("Team 2 Name", text: $team2Name)
                 .padding()
-            
-                        
+            NavigationView {
+                VStack {
+                    NavigationLink(destination: PlayerView())
+                label: do {
+                    Text("Go to Player View")
+                        .font(.headline)
+                    
+                    
+                }
+                }
+            }
         }
     }
 }

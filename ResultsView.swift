@@ -16,7 +16,7 @@ struct ResultsView: View {
                        .font(.title)
                        .foregroundColor(.white)
                        .padding()
-                       .background(Color.gray)
+                       .background(Color.blue)
                        .cornerRadius(10)
                    Spacer()
             }
