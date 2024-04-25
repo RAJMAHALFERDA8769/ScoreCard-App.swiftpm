@@ -8,12 +8,7 @@
 import Foundation
 import SwiftUI
 struct Player {
-    var name: String
-    var blocks: Int
-    var assists: Int
-    var rebounds: Int
-    var fouls: Int
-    var points: Int
+    
 }
 
 
