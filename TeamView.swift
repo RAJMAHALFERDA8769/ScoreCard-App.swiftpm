@@ -26,8 +26,17 @@ struct TeamView: View {
                 .padding()
             TextField("Team 2 Name", text: $team2Name)
                 .padding()
-            
-                        
+            NavigationView {
+                VStack {
+                    NavigationLink(destination: PlayerView())
+                label: do {
+                    Text("Go to Player View")
+                        .font(.headline)
+                    
+                    
+                }
+                }
+            }
         }
     }
 }
