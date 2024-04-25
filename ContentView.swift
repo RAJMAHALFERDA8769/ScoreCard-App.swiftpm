@@ -32,7 +32,7 @@ struct ContentView: View {
                 NavigationStack
                 {
                     NavigationLink("View Past Games") {
-                        SportStatsView()
+                        ResultsView()
                     }
                         .font(.system(size: 40))
                         .font(.title)

@@ -11,7 +11,14 @@ import SwiftUI
 struct ResultsView: View {
     var body: some View {
         VStack {
-            Text("Results")
+            Text("Results:")
+                       .font(.system(size: 30))
+                       .font(.title)
+                       .foregroundColor(.white)
+                       .padding()
+                       .background(Color.gray)
+                       .cornerRadius(10)
+                   Spacer()
             }
         }
     }
