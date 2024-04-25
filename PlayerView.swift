@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct PlayerView: View {
+
     
     @State var t1p1 = ""
     @State var t1p2 = ""
@@ -40,9 +41,7 @@ struct PlayerView: View {
                 TextField("Player 3", text: $t1p3)
                 TextField("Player 4", text: $t1p4)
                 TextField("Player 5", text: $t1p5)
-                TextField("Player 6", text: $t1p6)
-                TextField("Player 7", text: $t1p7)
-                TextField("Player 8", text: $t1p8)
+                
                 
                 
             }
@@ -54,9 +53,7 @@ struct PlayerView: View {
                 TextField("Player 3", text: $t2p3)
                 TextField("Player 4", text: $t2p4)
                 TextField("Player 5", text: $t2p5)
-                TextField("Player 6", text: $t2p6)
-                TextField("Player 7", text: $t2p7)
-                TextField("Player 8", text: $t2p8)
+               
             }
             Spacer()
         }
