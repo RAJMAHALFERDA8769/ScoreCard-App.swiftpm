@@ -17,8 +17,8 @@ struct Team {
     var players: [Player]
 }
 struct TeamView: View {
-    @State private var team1Name = ""
-    @State private var team2Name = ""
+    @State var team1Name = ""
+    @State var team2Name = ""
    
     var body: some View {
         VStack {
