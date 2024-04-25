@@ -39,17 +39,7 @@ struct SportSelectView: View {
                 }
                 .padding(.bottom, 20)
             }
-                
-                //                NavigationLink("Golf") {
-                //                    GolfView()
-                //                }
-                //                            .font(.system(size: 40))
-                //                            .font(.title)
-                //                            .foregroundColor(.white)
-                //                            .padding()
-                //                            .background(Color.gray)
-                //                            .cornerRadius(10)
-                //                    }
+            
                 .padding(.bottom, 20)
                 
                 
