@@ -28,10 +28,9 @@ struct TeamView: View {
                 .padding()
             NavigationView {
                 VStack {
-                    NavigationLink(destination: PlayerView())
-                label: do {
-                    Text("Go to Player View")
-                        .font(.headline)
+                    NavigationLink("Go To Player View") {
+                        PlayerView()
+                    }
                     
                     
                 }
@@ -39,4 +38,4 @@ struct TeamView: View {
             }
         }
     }
-}
+
