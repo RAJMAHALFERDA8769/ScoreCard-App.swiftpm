@@ -7,15 +7,7 @@
 
 import Foundation
 import SwiftUI
-struct Player {
-    
-}
 
-
-struct Team {
-    var name: String
-    var players: [Player]
-}
 struct TeamView: View {
     @State var team1Name = ""
     @State var team2Name = ""
@@ -28,7 +20,7 @@ struct TeamView: View {
                 .padding()
             NavigationView {
                 VStack {
-                    NavigationLink("Go To Player View") {
+                    NavigationLink("Next") {
                         PlayerView()
                     }
                     
