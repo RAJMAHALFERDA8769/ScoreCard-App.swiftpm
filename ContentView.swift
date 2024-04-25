@@ -3,14 +3,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color.blue
+            Color.white
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
                 Text("KeepScore")
                     .font(.system(size: 70))
                     .fontWeight(.bold)
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .padding(.top, 100)
                 
                 Spacer()
@@ -24,7 +24,7 @@ struct ContentView: View {
                         .font(.title)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.gray)
+                        .background(Color.blue)
                         .cornerRadius(10)
                 }
                 .padding(.bottom, 20)
@@ -38,7 +38,7 @@ struct ContentView: View {
                         .font(.title)
                         .foregroundColor(.white)
                         .padding()
-                        .background(Color.gray)
+                        .background(Color.blue)
                         .cornerRadius(10)
                 }
                 
