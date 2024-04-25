@@ -14,7 +14,7 @@ struct SportSelectView: View {
             HStack{
                 NavigationStack
                 {
-                    NavigationLink("ScoreCard") {
+                    NavigationLink("Begin") {
                     TeamView()
                     }
                     .font(.system(size: 40))
