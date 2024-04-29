@@ -58,7 +58,14 @@ struct PlayerView: View {
             Spacer()
         }
   
-              
+        NavigationView {
+            VStack {
+                NavigationLink("Next") {
+                    TableView(name: "", blocks: 0, assists: 0, rebounds: 0, fouls: 0, points: 0)
+                }
                 
+                
+            }
+        }
     }
 }
