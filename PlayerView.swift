@@ -28,14 +28,16 @@ struct PlayerView: View {
     @State var t2p6 = ""
     @State var t2p7 = ""
     @State var t2p8 = ""
-   
+    
+    let team1Name: String
+    let team2Name: String
    
     var body: some View {
         
         HStack{
             Spacer()
             VStack{
-               Text("Team 1")
+               Text(team1Name)
                 TextField("Player 1", text: $t1p1)
                 TextField("Player 2", text: $t1p2)
                 TextField("Player 3", text: $t1p3)
@@ -47,7 +49,7 @@ struct PlayerView: View {
             }
             Spacer()
             VStack{
-                Text("Team 2")
+                Text(team2Name)
                 TextField("Player 1", text: $t2p1)
                 TextField("Player 2", text: $t2p2)
                 TextField("Player 3", text: $t2p3)
@@ -57,7 +59,7 @@ struct PlayerView: View {
             }
             Spacer()
         }
-  
+       
               
                 
     }

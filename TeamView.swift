@@ -21,10 +21,8 @@ struct TeamView: View {
             NavigationView {
                 VStack {
                     NavigationLink("Next") {
-                        PlayerView()
+                        PlayerView(team1Name: team1Name, team2Name: team2Name)
                     }
-                    
-                    
                 }
                 }
             }
