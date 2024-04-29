@@ -57,7 +57,7 @@ struct PlayerView: View {
             }
             Spacer()
         }
-  
+       
               
                 
     }
