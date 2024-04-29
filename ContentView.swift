@@ -20,28 +20,29 @@ struct ContentView: View {
                     NavigationLink("Scoreboard") {
                         SportSelectView()
                     }
-                        .font(.system(size: 40))
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-
-               
-                
-                    NavigationLink("View Past Games") {
-                        ResultsView()
-                    }
-                        .font(.system(size: 40))
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                    .font(.system(size: 40))
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
                 }
                 
+                
+                
+                //                    NavigationLink("View Past Games") {
+                //                        ResultsView()
+                //                    }
+                //                        .font(.system(size: 40))
+                //                        .font(.title)
+                //                        .foregroundColor(.white)
+                //                        .padding()
+                //                        .background(Color.blue)
+                //                        .cornerRadius(10)
+                //                }
+                //
                 Spacer()
+            }
             }
         }
     }
