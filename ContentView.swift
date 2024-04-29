@@ -27,10 +27,9 @@ struct ContentView: View {
                         .background(Color.blue)
                         .cornerRadius(10)
                 }
-                .padding()
+
+               
                 
-                NavigationStack
-                {
                     NavigationLink("View Past Games") {
                         ResultsView()
                     }
@@ -45,6 +44,4 @@ struct ContentView: View {
                 Spacer()
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-}
