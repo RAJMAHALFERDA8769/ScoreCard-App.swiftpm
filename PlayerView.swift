@@ -45,7 +45,7 @@ struct PlayerView: View {
   
         NavigationView {
             VStack {
-                NavigationLink("Basketball") {
+                NavigationLink("Next") {
                     TableView()
 //                    PlayerView(team1Name: team1Name, team2Name: team2Name)
 
