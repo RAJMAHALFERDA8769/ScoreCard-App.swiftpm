@@ -6,32 +6,30 @@ struct SportSelectView: View {
     var body: some View {
         VStack {
             HStack{
-                NavigationStack
-                {
-                    NavigationLink("Next") {
+                    NavigationLink("Basketball") {
                     TeamView()
                     }
                     .font(.system(size: 40))
                     .font(.title)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color.blue)
+                    .background(Color.orange)
                     .cornerRadius(10)
-                }
+               
                 .padding(.bottom, 20)
-                NavigationStack
-                {
-                    NavigationLink("Home") {
-                        ContentView()
-                    }
-                    .font(.system(size: 40))
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
+                
+                NavigationLink("Golf") {
+                GolfView()
                 }
-                .padding(.bottom, 20)
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.green)
+                .cornerRadius(10)
+           
+            .padding(.bottom, 20)
+               
             }
             
                 .padding(.bottom, 20)
