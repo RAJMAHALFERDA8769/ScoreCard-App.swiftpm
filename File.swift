@@ -1,9 +1,3 @@
-//
-//  File.swift
-//  ScoreCard App
-//
-//  Created by Arun Rajeishbabu on 4/19/24.
-//
 
 import SwiftUI
 struct ButtonView: View {

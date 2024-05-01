@@ -1,9 +1,3 @@
-//
-//  ScoreboardView.swift
-//  ScoreCard App
-//
-//  Created by Myles Mosier on 4/25/24.
-//
 
 import Foundation
 

@@ -1,9 +1,3 @@
-//
-//  TeamView.swift
-//  ScoreCard App
-//
-//  Created by Arun Rajeishbabu on 4/25/24.
-//
 
 import Foundation
 import SwiftUI

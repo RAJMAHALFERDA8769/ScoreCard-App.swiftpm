@@ -1,9 +1,3 @@
-//
-//  ResultsView.swift
-//  ScoreCard App
-//
-//  Created by Mateus Salomao on 4/23/24.
-//
 
 import Foundation
 import SwiftUI

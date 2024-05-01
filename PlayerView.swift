@@ -1,9 +1,3 @@
-//
-//  PlayerView.swift
-//  ScoreCard App
-//
-//  Created by Mateus Salomao on 4/25/24.
-//
 
 import Foundation
 import SwiftUI
