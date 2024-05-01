@@ -11,7 +11,6 @@ struct PlayerStats: Identifiable {
     var steals: Int
     var fouls: Int
 }
-
 struct TableView: View {
     @State var playersStats: [PlayerStats] = [
         PlayerStats(playerName: "Player 1", points: 0, assists: 0, rebounds: 0, blocks: 0, steals: 0, fouls: 0),

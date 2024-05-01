@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 struct PlayerView: View {
-
     
     @State var t1p1 = ""
     @State var t1p2 = ""
@@ -17,7 +16,6 @@ struct PlayerView: View {
     @State var t1p4 = ""
     @State var t1p5 = ""
     
-  
     @State var t2p1 = ""
     @State var t2p2 = ""
     @State var t2p3 = ""
@@ -38,9 +36,6 @@ struct PlayerView: View {
                 TextField("Player 3", text: $t1p3)
                 TextField("Player 4", text: $t1p4)
                 TextField("Player 5", text: $t1p5)
-                
-                
-                
             }
             Spacer()
             VStack{
@@ -50,7 +45,6 @@ struct PlayerView: View {
                 TextField("Player 3", text: $t2p3)
                 TextField("Player 4", text: $t2p4)
                 TextField("Player 5", text: $t2p5)
-               
             }
             Spacer()
         }
@@ -59,9 +53,9 @@ struct PlayerView: View {
             VStack {
                 NavigationLink("Next") {
                     TableView()
+//                    PlayerView(team1Name: team1Name, team2Name: team2Name)
+
                 }
-                
-                
             }
         }
     }
