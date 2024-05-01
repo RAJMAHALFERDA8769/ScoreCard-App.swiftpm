@@ -19,7 +19,7 @@ let package = Package(
             bundleIdentifier: "org.jhhs625302.ScoreCard-App",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .calculator),
+            appIcon: .asset("AppIcon"),
             accentColor: .presetColor(.blue),
             supportedDeviceFamilies: [
                 .pad,
