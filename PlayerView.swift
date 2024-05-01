@@ -56,6 +56,9 @@ struct PlayerView: View {
 //                    PlayerView(team1Name: team1Name, team2Name: team2Name)
 
                 }
+                
+                
+                
             }
         }
     }
