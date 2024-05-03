@@ -53,6 +53,8 @@ struct SportSelectView: View {
                 .padding()
                 .background(Color.red)
                 .cornerRadius(10)
+                
+                .padding(.bottom, 20)
             }
             
              
