@@ -17,7 +17,7 @@ struct ContentView: View {
                 
                 NavigationStack
                 {
-                    NavigationLink("Scoreboard") {
+                    NavigationLink("Scorecard") {
                         SportSelectView()
                     }
                     .font(.system(size: 40))
