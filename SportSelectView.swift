@@ -31,8 +31,31 @@ struct SportSelectView: View {
             .padding(.bottom, 20)
                
             }
+            HStack{
+                NavigationLink("Soccer") {
+                SoccerView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.blue)
+                .cornerRadius(10)
+           
+            .padding(.bottom, 20)
+                
+                NavigationLink("Baseball") {
+                BaseballView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.red)
+                .cornerRadius(10)
+            }
             
-                .padding(.bottom, 20)
+             
                 
                 
             }
