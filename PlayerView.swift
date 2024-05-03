@@ -47,10 +47,13 @@ struct PlayerView: View {
             VStack {
                 NavigationLink("Next") {
                     TableView()
-//                    PlayerView(team1Name: team1Name, team2Name: team2Name)
-
                 }
-                
+                .font(.system(size: 20))
+                .font(.title)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .cornerRadius(60)
                 
                 
             }
