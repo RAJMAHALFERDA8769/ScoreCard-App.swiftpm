@@ -1,7 +1,7 @@
 
 import SwiftUI
 struct ButtonView: View {
-    @State private var tableData = [
+    @State var tableData = [
         "Row 1",
         "Row 2",
         "Row 3"
