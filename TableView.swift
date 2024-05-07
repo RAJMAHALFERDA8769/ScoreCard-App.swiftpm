@@ -8,27 +8,26 @@ struct Player {
     var rebounds: Binding<Int>
     var steals: Binding<Int>
     var blocks: Binding<Int>
-    var fouls: Binding<Int>
+    
     //var (whatever): Binding<Int> means that points is a property that displays a two-way connection to an integer value. Any changes made to that integer will be reflected in the original integer value
 }
 
 struct TableView: View {
     @State var team1: [Player] = [
-        Player(name: "Player 1", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0)),
-        Player(name: "Player 2", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0)),
-        Player(name: "Player 3", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0)),
-        Player(name: "Player 4", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0)),
-        Player(name: "Player 5", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0))
+        Player(name: "Player 1", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0)),
+        Player(name: "Player 2", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0)),
+        Player(name: "Player 3", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0)),
+        Player(name: "Player 4", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0)),
+        Player(name: "Player 5", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0))
     ]
     
     @State var team2: [Player] = [
-        Player(name: "Player A", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0)),
-        Player(name: "Player B", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0)),
-        Player(name: "Player C", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0)),
-        Player(name: "Player D", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0)),
-        Player(name: "Player E", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0), fouls: .constant(0))
+        Player(name: "Player A", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0)),
+        Player(name: "Player B", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0)),
+        Player(name: "Player C", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0)),
+        Player(name: "Player D", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0)),
+        Player(name: "Player E", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0))
     ]
-    //research constant
     
     var body: some View {
         VStack {
@@ -50,7 +49,6 @@ struct TableView: View {
                 Text("Rebounds").bold().frame(width: 70)
                 Text("Steals").bold().frame(width: 50)
                 Text("Blocks").bold().frame(width: 50)
-                Text("Fouls").bold().frame(width: 50)
             }
             
             ForEach(players.wrappedValue.indices, id: \.self) { index in
@@ -63,7 +61,6 @@ struct TableView: View {
                     TextField("Rebounds", value: player.rebounds, formatter: NumberFormatter()).frame(width: 70)
                     TextField("Steals", value: player.steals, formatter: NumberFormatter()).frame(width: 50)
                     TextField("Blocks", value: player.blocks, formatter: NumberFormatter()).frame(width: 50)
-                    TextField("Fouls", value: player.fouls, formatter: NumberFormatter()).frame(width: 50)
                 }
             }
         }
