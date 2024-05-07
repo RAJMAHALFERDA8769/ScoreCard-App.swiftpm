@@ -8,6 +8,7 @@ struct Player {
     var steals: Binding<Int>
     var blocks: Binding<Int>
 }
+// ^^(binding<int> a connection between a value and a view that displays and changes it
 
 struct TableView: View {
     @State var team1: [Player] = [
@@ -36,6 +37,7 @@ struct TableView: View {
         }.padding()
     }
     
+    // binds player to array and then to view protocol
     func playerTable(players: Binding<[Player]>) -> some View {
         VStack {
             HStack {
@@ -47,6 +49,8 @@ struct TableView: View {
                 Text("Blk").bold().frame(width: 35)
             }
             
+            // property wrapper that wraps an array or a collection
+            // *indice = returns range of all numbers
             ForEach(players.wrappedValue.indices, id: \.self) { index in
                 let player = players.wrappedValue[index]
                 HStack {
