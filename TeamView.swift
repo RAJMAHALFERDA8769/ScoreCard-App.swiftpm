@@ -16,7 +16,6 @@ struct TeamView: View {
                 .textFieldStyle(.roundedBorder)
                 .font(.system(size: 20))
                                     .font(.title)
-                                    .foregroundColor(.white)
                                     .cornerRadius(60)
                 
             TextField("Enter Team 2 Name", text: $team2Name)
@@ -25,7 +24,6 @@ struct TeamView: View {
                 .textFieldStyle(.roundedBorder)
                 .font(.system(size: 20))
                                     .font(.title)
-                                    .foregroundColor(.white)
                                     .cornerRadius(60)
             NavigationView {
                 VStack {

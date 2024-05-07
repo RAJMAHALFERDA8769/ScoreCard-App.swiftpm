@@ -37,7 +37,6 @@ struct PlayerView: View {
             .textFieldStyle(.roundedBorder)
             .font(.system(size: 20))
                                 .font(.title)
-                                .foregroundColor(.white)
                                 .cornerRadius(60)
 
                                 
@@ -54,7 +53,6 @@ struct PlayerView: View {
             .textFieldStyle(.roundedBorder)
             .font(.system(size: 20))
                                 .font(.title)
-                                .foregroundColor(.white)
                                 .cornerRadius(60)
             Spacer()
         }
