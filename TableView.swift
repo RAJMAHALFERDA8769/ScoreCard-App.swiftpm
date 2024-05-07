@@ -1,4 +1,3 @@
-import Foundation
 import SwiftUI
 
 struct Player {
@@ -8,8 +7,6 @@ struct Player {
     var rebounds: Binding<Int>
     var steals: Binding<Int>
     var blocks: Binding<Int>
-    
-    //var (whatever): Binding<Int> means that points is a property that displays a two-way connection to an integer value. Any changes made to that integer will be reflected in the original integer value
 }
 
 struct TableView: View {
@@ -31,7 +28,7 @@ struct TableView: View {
     
     var body: some View {
         VStack {
-            Text("Team 1").font(.headline)
+            Text("Team 1").font(.headline).padding(.top)
             playerTable(players: $team1)
             
             Text("Team 2").font(.headline)
@@ -40,27 +37,25 @@ struct TableView: View {
     }
     
     func playerTable(players: Binding<[Player]>) -> some View {
-        //research the 2 lines of code above
         VStack {
             HStack {
-                Text("Player").bold().frame(width: 100)
-                Text("Points").bold().frame(width: 60)
-                Text("Assists").bold().frame(width: 60)
-                Text("Rebounds").bold().frame(width: 70)
-                Text("Steals").bold().frame(width: 50)
-                Text("Blocks").bold().frame(width: 50)
+                Text("Player").bold().frame(width: 80)
+                Text("Pts").bold().frame(width: 40)
+                Text("Ast").bold().frame(width: 40)
+                Text("Reb").bold().frame(width: 50)
+                Text("Stl").bold().frame(width: 35)
+                Text("Blk").bold().frame(width: 35)
             }
             
             ForEach(players.wrappedValue.indices, id: \.self) { index in
-                //research the 2 lines of code above
                 let player = players.wrappedValue[index]
                 HStack {
-                    Text(player.name).frame(width: 100)
-                    TextField("Points", value: player.points, formatter: NumberFormatter()).frame(width: 60)
-                    TextField("Assists", value: player.assists, formatter: NumberFormatter()).frame(width: 60)
-                    TextField("Rebounds", value: player.rebounds, formatter: NumberFormatter()).frame(width: 70)
-                    TextField("Steals", value: player.steals, formatter: NumberFormatter()).frame(width: 50)
-                    TextField("Blocks", value: player.blocks, formatter: NumberFormatter()).frame(width: 50)
+                    Text(player.name).frame(width: 80)
+                    TextField("Pts", value: player.points, formatter: NumberFormatter()).frame(width: 40)
+                    TextField("Ast", value: player.assists, formatter: NumberFormatter()).frame(width: 40)
+                    TextField("Reb", value: player.rebounds, formatter: NumberFormatter()).frame(width: 50)
+                    TextField("Stl", value: player.steals, formatter: NumberFormatter()).frame(width: 35)
+                    TextField("Blk", value: player.blocks, formatter: NumberFormatter()).frame(width: 35)
                 }
             }
         }
