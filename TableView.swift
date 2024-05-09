@@ -19,6 +19,7 @@ struct TableView: View {
         Player(name: "Player 5", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0))
 
     ]
+        
     
     @State var team2: [Player] = [
         Player(name: "Player A", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0)),
