@@ -11,5 +11,6 @@ import SwiftUI
 struct SoccerView: View {
     var body: some View {
         Text("Soccer coming soon...")
+        Text("Hey")
     }
 }
