@@ -21,16 +21,25 @@ struct PlayerView: View {
    
     var body: some View {
         
+        Spacer(minLength: 50)
+        
         HStack{
-            Spacer()
+            
             VStack{
-               Text(team1Name)
+                Text(team1Name)
                 TextField("Player 1", text: $t1p1)
                 TextField("Player 2", text: $t1p2)
                 TextField("Player 3", text: $t1p3)
                 TextField("Player 4", text: $t1p4)
                 TextField("Player 5", text: $t1p5)
             }
+            .padding()
+            .textFieldStyle(.roundedBorder)
+            .font(.system(size: 20))
+                                .font(.title)
+                                .cornerRadius(60)
+
+                                
             Spacer()
             VStack{
                 Text(team2Name)
@@ -40,6 +49,11 @@ struct PlayerView: View {
                 TextField("Player 4", text: $t2p4)
                 TextField("Player 5", text: $t2p5)
             }
+            .padding()
+            .textFieldStyle(.roundedBorder)
+            .font(.system(size: 20))
+                                .font(.title)
+                                .cornerRadius(60)
             Spacer()
         }
   

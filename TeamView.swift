@@ -8,10 +8,23 @@ struct TeamView: View {
    
     var body: some View {
         VStack {
-            TextField("Team 1 Name", text: $team1Name)
+            
+           Spacer(minLength: 100)
+            
+            TextField("Enter Team 1 Name", text: $team1Name)
                 .padding()
-            TextField("Team 2 Name", text: $team2Name)
+                .textFieldStyle(.roundedBorder)
+                .font(.system(size: 20))
+                                    .font(.title)
+                                    .cornerRadius(60)
+                
+            TextField("Enter Team 2 Name", text: $team2Name)
+            
                 .padding()
+                .textFieldStyle(.roundedBorder)
+                .font(.system(size: 20))
+                                    .font(.title)
+                                    .cornerRadius(60)
             NavigationView {
                 VStack {
                     NavigationLink("Next") {
