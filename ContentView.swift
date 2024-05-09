@@ -26,23 +26,19 @@ struct ContentView: View {
                     .padding()
                     .background(Color.blue)
                     .cornerRadius(10)
+                    
+                    NavigationLink("View Past Games") {
+                        ResultsView()
+                    }
+                    .font(.system(size: 40))
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
                 }
-                
-                
-                
-                //                    NavigationLink("View Past Games") {
-                //                        ResultsView()
-                //                    }
-                //                        .font(.system(size: 40))
-                //                        .font(.title)
-                //                        .foregroundColor(.white)
-                //                        .padding()
-                //                        .background(Color.blue)
-                //                        .cornerRadius(10)
-                //                }
-                //
+            }
                 Spacer()
             }
             }
         }
-    }

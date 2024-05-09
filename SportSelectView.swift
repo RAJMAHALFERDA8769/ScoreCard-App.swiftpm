@@ -6,20 +6,20 @@ struct SportSelectView: View {
     var body: some View {
         VStack {
             HStack{
-                    NavigationLink("Basketball") {
+                NavigationLink("Basketball") {
                     TeamView()
-                    }
-                    .font(.system(size: 40))
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.orange)
-                    .cornerRadius(10)
-               
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.orange)
+                .cornerRadius(10)
+                
                 .padding(.bottom, 20)
                 
                 NavigationLink("Golf") {
-                GolfView()
+                    GolfView()
                 }
                 .font(.system(size: 40))
                 .font(.title)
@@ -27,13 +27,13 @@ struct SportSelectView: View {
                 .padding()
                 .background(Color.green)
                 .cornerRadius(10)
-           
-            .padding(.bottom, 20)
-               
+                
+                .padding(.bottom, 20)
+                
             }
             HStack{
                 NavigationLink("Soccer") {
-                SoccerView()
+                    SoccerView()
                 }
                 .font(.system(size: 40))
                 .font(.title)
@@ -41,11 +41,11 @@ struct SportSelectView: View {
                 .padding()
                 .background(Color.blue)
                 .cornerRadius(10)
-           
-            .padding(.bottom, 20)
+                
+                .padding(.bottom, 20)
                 
                 NavigationLink("Baseball") {
-                BaseballView()
+                    BaseballView()
                 }
                 .font(.system(size: 40))
                 .font(.title)
@@ -57,12 +57,11 @@ struct SportSelectView: View {
                 .padding(.bottom, 20)
             }
             
-             
-                
+            
+        }
                 
             }
         }
-    }
 
     
 
