@@ -8,13 +8,13 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "ScoreCard App",
+    name: "KeepScore App",
     platforms: [
         .iOS("16.0")
     ],
     products: [
         .iOSApplication(
-            name: "ScoreCard App",
+            name: "KeepScore App",
             targets: ["AppModule"],
             bundleIdentifier: "org.jhhs625302.ScoreCard-App",
             displayVersion: "1.0",
