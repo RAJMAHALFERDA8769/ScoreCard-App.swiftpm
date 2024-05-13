@@ -14,9 +14,10 @@ struct ResultsView: View {
                 .padding(.bottom, 20)
             Spacer()
             Text("Coming Soon...")
-                .font(.system(size: 30))
+                .font(.system(size: 25))
                 .fontWeight(.bold)
                 .padding(.bottom, 20)
+            Spacer()
         }
     }
 }
