@@ -16,8 +16,8 @@ struct PlayerView: View {
     @State var t2p4 = ""
     @State var t2p5 = ""
     
-    let team1Name: String
-    let team2Name: String
+    var team1Name: String
+    var team2Name: String
    
     var body: some View {
         

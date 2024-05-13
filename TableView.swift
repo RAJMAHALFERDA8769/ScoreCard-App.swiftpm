@@ -29,6 +29,7 @@ struct TableView: View {
         Player(name: "Player E", points: .constant(0), assists: .constant(0), rebounds: .constant(0), steals: .constant(0), blocks: .constant(0))
     ]
     
+ 
     var body: some View {
         VStack {
             Text("Team 1").font(.headline).padding(.top)
