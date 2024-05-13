@@ -23,9 +23,16 @@ struct PlayerView: View {
         
         Spacer(minLength: 50)
         
+        Text("Select Player Names")
+            .font(.system(size: 30))
+            .font(.title)
+        
         HStack{
             
             VStack{
+                
+                
+                
                 Text(team1Name)
                 TextField("Player 1", text: $t1p1)
                 TextField("Player 2", text: $t1p2)
