@@ -16,7 +16,8 @@ let package = Package(
         .iOSApplication(
             name: "KeepScore App",
             targets: ["AppModule"],
-            bundleIdentifier: "org.jhhs625302.ScoreCard-App",
+            bundleIdentifier: "org.jhhs625246.ScoreCard-App",
+            teamIdentifier: "B9VTNLW86B",
             displayVersion: "1.0",
             bundleVersion: "1",
             appIcon: .asset("AppIcon"),

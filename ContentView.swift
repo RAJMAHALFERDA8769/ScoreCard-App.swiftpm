@@ -7,6 +7,8 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
+                Spacer()
+                Spacer()
                 Text("KeepScore")
                     .font(.system(size: 70))
                     .fontWeight(.bold)
