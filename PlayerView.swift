@@ -1,4 +1,3 @@
-
 import Foundation
 import SwiftUI
 
@@ -18,66 +17,98 @@ struct PlayerView: View {
     
     var team1Name: String
     var team2Name: String
-   
+    
     var body: some View {
-        
-        Spacer(minLength: 50)
-        
-        Text("Select Player Names")
-            .font(.system(size: 30))
-            .font(.title)
-        
-        HStack{
+        VStack {
+            Spacer(minLength: 50)
             
-            VStack{
-                
-                
-                
-                Text(team1Name)
-                TextField("Player 1", text: $t1p1)
-                TextField("Player 2", text: $t1p2)
-                TextField("Player 3", text: $t1p3)
-                TextField("Player 4", text: $t1p4)
-                TextField("Player 5", text: $t1p5)
-            }
-            .padding()
-            .textFieldStyle(.roundedBorder)
-            .font(.system(size: 20))
-                                .font(.title)
-                                .cornerRadius(60)
-
-                                
-            Spacer()
-            VStack{
-                Text(team2Name)
-                TextField("Player 1", text: $t2p1)
-                TextField("Player 2", text: $t2p2)
-                TextField("Player 3", text: $t2p3)
-                TextField("Player 4", text: $t2p4)
-                TextField("Player 5", text: $t2p5)
-            }
-            .padding()
-            .textFieldStyle(.roundedBorder)
-            .font(.system(size: 20))
-                                .font(.title)
-                                .cornerRadius(60)
-            Spacer()
-        }
-  
-        NavigationView {
-            VStack {
-                NavigationLink("Next") {
-                    TableView()
+            Text("Select Player Names")
+                .font(.system(size: 30))
+                .fontWeight(.bold)
+                .padding(.bottom, 20)
+            
+            HStack {
+                VStack {
+                    Text(team1Name)
+                        .font(.title)
+                        .padding(.bottom, 10)
+                    
+                    TextField("Player 1", text: $t1p1)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
+                    
+                    TextField("Player 2", text: $t1p2)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
+                    
+                    TextField("Player 3", text: $t1p3)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
+                    
+                    TextField("Player 4", text: $t1p4)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
+                    
+                    TextField("Player 5", text: $t1p5)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
                 }
-                .font(.system(size: 20))
-                .font(.title)
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .background(Color.blue)
-                                    .cornerRadius(60)
+                .padding()
                 
+                Spacer()
                 
+                VStack {
+                    Text(team2Name)
+                        .font(.title)
+                        .padding(.bottom, 10)
+                    
+                    TextField("Player 1", text: $t2p1)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
+                    
+                    TextField("Player 2", text: $t2p2)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
+                    
+                    TextField("Player 3", text: $t2p3)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
+                    
+                    TextField("Player 4", text: $t2p4)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
+                    
+                    TextField("Player 5", text: $t2p5)
+                        .padding()
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.system(size: 20))
+                }
+                .padding()
+                
+                Spacer()
             }
+            
+            NavigationLink(destination: TableView()) {
+                Text("Next")
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
+            }
+            .padding(.top, 20)
+            
+            Spacer()
         }
+        .padding()
     }
 }
