@@ -11,13 +11,17 @@ struct TeamView: View {
             
            Spacer(minLength: 100)
             
+            Text("Select Team Names")
+                .font(.system(size: 30))
+                .font(.title)
+         
             TextField("Enter Team 1 Name", text: $team1Name)
                 .padding()
                 .textFieldStyle(.roundedBorder)
                 .font(.system(size: 20))
                                     .font(.title)
                                     .cornerRadius(60)
-                
+        
             TextField("Enter Team 2 Name", text: $team2Name)
             
                 .padding()

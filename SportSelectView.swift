@@ -5,6 +5,15 @@ import SwiftUI
 struct SportSelectView: View {
     var body: some View {
         VStack {
+            
+            Spacer()
+            
+            Text("Select Your Sport")
+                .font(.system(size: 40))
+                .font(.title)
+             
+            Spacer()
+            
             HStack{
                 NavigationLink("Basketball") {
                     TeamView()
@@ -56,6 +65,7 @@ struct SportSelectView: View {
                 
                 .padding(.bottom, 20)
             }
+            Spacer()
         }
                 
             }
