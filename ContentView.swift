@@ -15,10 +15,10 @@ struct ContentView: View {
                     .foregroundColor(.blue)
                     .padding(.top, 100)
                 
-                
+             
                 NavigationStack
                 {
-                
+                Spacer()
                     
                     NavigationLink("Scorecard") {
                         SportSelectView()
@@ -39,8 +39,8 @@ struct ContentView: View {
                     .padding()
                     .background(Color.blue)
                     .cornerRadius(10)
-                    
                     Spacer()
+                 Spacer()
                 }
             }
               
