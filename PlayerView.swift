@@ -34,27 +34,22 @@ struct PlayerView: View {
                         .padding(.bottom, 10)
                     
                     TextField("Player 1", text: $t1p1)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                     
                     TextField("Player 2", text: $t1p2)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                     
                     TextField("Player 3", text: $t1p3)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                     
                     TextField("Player 4", text: $t1p4)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                     
                     TextField("Player 5", text: $t1p5)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                 }
@@ -68,27 +63,22 @@ struct PlayerView: View {
                         .padding(.bottom, 10)
                     
                     TextField("Player 1", text: $t2p1)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                     
                     TextField("Player 2", text: $t2p2)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                     
                     TextField("Player 3", text: $t2p3)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                     
                     TextField("Player 4", text: $t2p4)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                     
                     TextField("Player 5", text: $t2p5)
-                        .padding()
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                 }
