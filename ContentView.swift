@@ -9,9 +9,10 @@ struct ContentView: View {
         
                 
                 
-                
+             
                 NavigationStack
                 {
+                Spacer()
                     
                     Text("KeepScore")
                         .font(.system(size: 70))
@@ -39,8 +40,8 @@ struct ContentView: View {
                     .padding()
                     .background(Color.blue)
                     .cornerRadius(10)
-                    
                     Spacer()
+                 Spacer()
                 }
             }
               
