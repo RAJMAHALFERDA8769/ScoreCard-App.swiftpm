@@ -6,20 +6,20 @@ struct ContentView: View {
             Color.white
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
-                Spacer()
-                Spacer()
-                Text("KeepScore")
-                    .font(.system(size: 70))
-                    .fontWeight(.bold)
-                    .foregroundColor(.blue)
-                    .padding(.top, 100)
+        
+                
                 
                 
                 NavigationStack
                 {
-                
                     
+                    Text("KeepScore")
+                        .font(.system(size: 70))
+                        .fontWeight(.bold)
+                        .foregroundColor(.blue)
+                        .padding(.top, 100)
+                    Spacer()
+                    Spacer()
                     NavigationLink("Scorecard") {
                         SportSelectView()
                     }
@@ -46,4 +46,4 @@ struct ContentView: View {
               
             }
             }
-        }
+        

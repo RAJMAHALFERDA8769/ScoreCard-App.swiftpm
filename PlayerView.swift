@@ -92,9 +92,7 @@ struct PlayerView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .font(.system(size: 20))
                 }
-                .padding()
                 
-                Spacer()
             }
             
             NavigationLink(destination: TableView()) {
