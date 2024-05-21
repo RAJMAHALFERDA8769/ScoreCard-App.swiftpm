@@ -1,4 +1,5 @@
 
+
 import Foundation
 import SwiftUI
 
@@ -70,6 +71,3 @@ struct SportSelectView: View {
                 
             }
         }
-
-    
-
