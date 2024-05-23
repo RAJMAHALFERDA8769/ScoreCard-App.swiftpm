@@ -10,11 +10,11 @@ import Foundation
 import SwiftUI
 
 struct SoccerView: View {
-    @State var homeTeam: String = "Home Team"
-    @State var awayTeam: String = "Away Team"
+    
     @State var homeScore: Int = 0
     @State var awayScore: Int = 0
-    
+    var Soccerteam1Name: String
+    var Soccerteam2Name: String
     
     var body: some View {
         VStack {
@@ -24,7 +24,7 @@ struct SoccerView: View {
             
             HStack {
                 VStack {
-                    Text(homeTeam)
+                    Text(Soccerteam1Name)
                         .font(.title)
                         .padding()
                     Text("\(homeScore)")
@@ -57,7 +57,7 @@ struct SoccerView: View {
                 }
                 Spacer()
                 VStack {
-                    Text(awayTeam)
+                    Text(Soccerteam2Name)
                         .font(.title)
                         .padding()
                     Text("\(awayScore)")

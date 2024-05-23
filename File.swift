@@ -30,7 +30,7 @@ struct SoccerTeamView: View {
             NavigationView {
                 VStack {
                     NavigationLink("Next") {
-                        SoccerView()
+                        SoccerView(homeScore: 0, awayScore: 0, Soccerteam1Name: Soccerteam1Name, Soccerteam2Name: Soccerteam2Name)
                     }
                     .font(.system(size: 20))
                                         .font(.title)
