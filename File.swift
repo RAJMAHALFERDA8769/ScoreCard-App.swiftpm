@@ -1,21 +1,47 @@
 
 import SwiftUI
-struct ButtonView: View {
-    @State var tableData = [
-        "Row 1",
-        "Row 2",
-        "Row 3"
-    ]
+struct SoccerTeamView: View {
+    @State var Soccerteam1Name = ""
+    @State var Soccerteam2Name = ""
+   
     var body: some View {
         VStack {
-        List(tableData, id: \.self) { rowData in
-                Text(rowData)
-            }
-            Button("Clear Table Data") {
             
-                tableData = []
+           Spacer(minLength: 100)
+            
+            Text("Select Team Names")
+                .font(.system(size: 30))
+                .font(.title)
+         
+            TextField("Enter Team 1 Name", text: $Soccerteam1Name)
+                .padding()
+                .textFieldStyle(.roundedBorder)
+                .font(.system(size: 20))
+                                    .font(.title)
+                                    .cornerRadius(60)
+        
+            TextField("Enter Team 2 Name", text: $Soccerteam2Name)
+            
+                .padding()
+                .textFieldStyle(.roundedBorder)
+                .font(.system(size: 20))
+                                    .font(.title)
+                                    .cornerRadius(60)
+            NavigationView {
+                VStack {
+                    NavigationLink("Next") {
+                        SoccerView()
+                    }
+                    .font(.system(size: 20))
+                                        .font(.title)
+                                        .foregroundColor(.white)
+                                        .padding()
+                                        .background(Color.blue)
+                                        .cornerRadius(60)
+                }
+                }
             }
-            .padding()
         }
     }
-}
+
+
