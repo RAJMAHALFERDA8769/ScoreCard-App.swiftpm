@@ -78,6 +78,18 @@ struct SportSelectView: View {
             
             .padding(.bottom, 20)
             
+            NavigationLink("Softball") {
+                KellyView()
+            }
+            .font(.system(size: 40))
+            .font(.title)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.teal)
+            .cornerRadius(10)
+            
+            .padding(.bottom, 20)
+            
             Spacer()
         }
                 
