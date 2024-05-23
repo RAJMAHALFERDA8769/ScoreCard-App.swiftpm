@@ -14,7 +14,6 @@ struct SoccerView: View {
     @State private var awayTeam: String = "Away Team"
     @State private var homeScore: Int = 0
     @State private var awayScore: Int = 0
-    @State private var matchTime: String = "0:00"
     
     var body: some View {
         VStack {
@@ -91,11 +90,7 @@ struct SoccerView: View {
             }
             .padding(.horizontal)
             
-            Text("Match Time: \(matchTime)")
-                .font(.subheadline)
-                .padding()
             
-            Spacer()
         }
         .padding()
         .background(Color(.systemGray6))

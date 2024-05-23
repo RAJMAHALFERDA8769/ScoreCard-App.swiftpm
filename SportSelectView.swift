@@ -66,6 +66,18 @@ struct SportSelectView: View {
                 
                 .padding(.bottom, 20)
             }
+            NavigationLink("Track and Field") {
+                TrackandFieldView()
+            }
+            .font(.system(size: 40))
+            .font(.title)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.purple)
+            .cornerRadius(10)
+            
+            .padding(.bottom, 20)
+            
             Spacer()
         }
                 
