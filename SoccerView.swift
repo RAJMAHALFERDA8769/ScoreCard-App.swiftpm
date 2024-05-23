@@ -14,7 +14,7 @@ struct SoccerView: View {
     @State var awayTeam: String = "Away Team"
     @State var homeScore: Int = 0
     @State var awayScore: Int = 0
-    @State var matchTime: String = "0:00"
+    
     
     var body: some View {
         VStack {
