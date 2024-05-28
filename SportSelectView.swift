@@ -9,7 +9,7 @@ struct SportSelectView: View {
             
             Spacer()
             
-            Text("Select Your Sport")
+            Text("Select A Sport")
                 .font(.system(size: 40))
                 .font(.title)
              
