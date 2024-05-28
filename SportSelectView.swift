@@ -68,7 +68,7 @@ struct SportSelectView: View {
             }
             HStack{
                 
-                
+                Spacer()
                 NavigationLink("Track") {
                     TrackView()
                 }
@@ -79,8 +79,18 @@ struct SportSelectView: View {
                 .background(Color.purple)
                 .cornerRadius(10)
                 
-                .padding(.bottom, 20)
+              
                 
+                NavigationLink("Football") {
+                    FootballView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.cyan)
+                .cornerRadius(10)
+                Spacer()
 //                NavigationLink("Field") {
 //                    FieldView()
 //                }
@@ -92,7 +102,9 @@ struct SportSelectView: View {
 //                .cornerRadius(10)
 //                
 //                .padding(.bottom, 20)
+                
             }
+         
             NavigationLink("Softball") {
                 KellyView()
             }
@@ -106,6 +118,7 @@ struct SportSelectView: View {
             .padding(.bottom, 20)
             
             Spacer()
+           
         }
                 
             }

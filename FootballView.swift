@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct FootballView: View {
+    var body: some View {
+        Text("Football coming soon...")
+    }
+}
