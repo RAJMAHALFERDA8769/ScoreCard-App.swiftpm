@@ -38,7 +38,7 @@ struct SoccerView: View {
                                 .font(.title)
                                 .padding()
                                 .background(Color.green)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .cornerRadius(10)
                         }
                         Button(action: {
@@ -50,7 +50,7 @@ struct SoccerView: View {
                                 .font(.title)
                                 .padding()
                                 .background(Color.red)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .cornerRadius(10)
                         }
                     }
@@ -71,7 +71,7 @@ struct SoccerView: View {
                                 .font(.title)
                                 .padding()
                                 .background(Color.green)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .cornerRadius(10)
                         }
                         Button(action: {
@@ -83,7 +83,7 @@ struct SoccerView: View {
                                 .font(.title)
                                 .padding()
                                 .background(Color.red)
-                                .foregroundColor(.white)
+                                .foregroundColor(.black)
                                 .cornerRadius(10)
                         }
                     }
