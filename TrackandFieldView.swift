@@ -8,9 +8,12 @@
 import Foundation
 import SwiftUI
 
-struct TrackandFieldView: View {
+struct TrackView: View {
     var body: some View {
-        Text("Track and Field coming soon...")
+        Text("Track Events")
+            .font(.title)
+        Spacer()
+        
     }
 }
 
