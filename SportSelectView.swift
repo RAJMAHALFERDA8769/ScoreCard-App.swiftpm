@@ -9,7 +9,7 @@ struct SportSelectView: View {
             
             Spacer()
             
-            Text("Select Your Sport")
+            Text("Select A Sport")
                 .font(.system(size: 40))
                 .font(.title)
              
@@ -66,18 +66,45 @@ struct SportSelectView: View {
                 
                 .padding(.bottom, 20)
             }
-            NavigationLink("Track and Field") {
-                TrackandFieldView()
+            HStack{
+                
+                Spacer()
+                NavigationLink("Track") {
+                    TrackView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.purple)
+                .cornerRadius(10)
+                
+              
+                
+                NavigationLink("Football") {
+                    FootballView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.cyan)
+                .cornerRadius(10)
+                Spacer()
+//                NavigationLink("Field") {
+//                    FieldView()
+//                }
+//                .font(.system(size: 40))
+//                .font(.title)
+//                .foregroundColor(.white)
+//                .padding()
+//                .background(Color.purple)
+//                .cornerRadius(10)
+//                
+//                .padding(.bottom, 20)
+                
             }
-            .font(.system(size: 40))
-            .font(.title)
-            .foregroundColor(.white)
-            .padding()
-            .background(Color.purple)
-            .cornerRadius(10)
-            
-            .padding(.bottom, 20)
-            
+         
             NavigationLink("Softball") {
                 KellyView()
             }
@@ -91,6 +118,7 @@ struct SportSelectView: View {
             .padding(.bottom, 20)
             
             Spacer()
+           
         }
                 
             }
