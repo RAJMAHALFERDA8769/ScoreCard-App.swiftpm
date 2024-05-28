@@ -1,11 +1,3 @@
-//
-//  KellyView.swift
-//  KeepScore App
-//
-//  Created by Myles Mosier on 5/23/24.
-//
-
-import Foundation
 import SwiftUI
 
 struct PlayerStat: Identifiable {
@@ -33,39 +25,39 @@ struct KellyView: View {
     ]
     
     var body: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 10) {
             Text("Softball Stat Tracker")
-                .font(.largeTitle)
-                .padding()
+                .font(.title2)
+                .padding(.top)
             
             HStack {
                 VStack {
                     Text("Home Team")
-                        .font(.title2)
+                        .font(.headline)
                     Text("\(homeTeamScore)")
-                        .font(.largeTitle)
-                        .padding()
+                        .font(.title)
+                        .padding(.bottom, 5)
                     Stepper("Add Run", value: $homeTeamScore)
-                        .padding()
+                        .padding(.horizontal)
                 }
                 Spacer()
                 VStack {
                     Text("Away Team")
-                        .font(.title2)
+                        .font(.headline)
                     Text("\(awayTeamScore)")
-                        .font(.largeTitle)
-                        .padding()
+                        .font(.title)
+                        .padding(.bottom, 5)
                     Stepper("Add Run", value: $awayTeamScore)
-                        .padding()
+                        .padding(.horizontal)
                 }
             }
-            .padding()
+            .padding(.horizontal)
             
             List {
                 ForEach($players) { $player in
-                    VStack(alignment: .leading) {
+                    VStack(alignment: .leading, spacing: 5) {
                         TextField("Player Name", text: $player.name)
-                            .font(.headline)
+                            .font(.subheadline)
                         HStack {
                             Stepper("Runs: \(player.runs)", value: $player.runs)
                             Spacer()
@@ -73,13 +65,14 @@ struct KellyView: View {
                             Spacer()
                             Stepper("Errors: \(player.errors)", value: $player.errors)
                         }
+                        .font(.footnote)
                     }
-                    .padding()
+                    .padding(.vertical, 5)
                 }
             }
             
             Spacer()
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
