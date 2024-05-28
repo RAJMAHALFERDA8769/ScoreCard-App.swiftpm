@@ -66,18 +66,33 @@ struct SportSelectView: View {
                 
                 .padding(.bottom, 20)
             }
-            NavigationLink("Track and Field") {
-                TrackandFieldView()
+            HStack{
+                
+                
+                NavigationLink("Track") {
+                    TrackView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.purple)
+                .cornerRadius(10)
+                
+                .padding(.bottom, 20)
+                
+//                NavigationLink("Field") {
+//                    FieldView()
+//                }
+//                .font(.system(size: 40))
+//                .font(.title)
+//                .foregroundColor(.white)
+//                .padding()
+//                .background(Color.purple)
+//                .cornerRadius(10)
+//                
+//                .padding(.bottom, 20)
             }
-            .font(.system(size: 40))
-            .font(.title)
-            .foregroundColor(.white)
-            .padding()
-            .background(Color.purple)
-            .cornerRadius(10)
-            
-            .padding(.bottom, 20)
-            
             NavigationLink("Softball") {
                 KellyView()
             }
