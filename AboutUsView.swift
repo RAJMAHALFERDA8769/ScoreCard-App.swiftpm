@@ -18,44 +18,49 @@ struct AboutUsView: View {
                 .resizable()
                
             VStack {
-                Button("Raj")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .padding(.bottom, 20)
-                Button("Myles")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .padding(.bottom, 20)
-                Button("Adam")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .padding(.bottom, 20)
-                Button("Mateus")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .padding(.bottom, 20)
-                
+                NavigationLink("Raj") {
+                    RajView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.teal)
+                .cornerRadius(10)
+                .padding(.bottom, 20)
+                NavigationLink("Mateus") {
+                    MateusView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.teal)
+                .cornerRadius(10)
+                .padding(.bottom, 20)
+                NavigationLink("Adam") {
+                    AdamView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.teal)
+                .cornerRadius(10)
+                .padding(.bottom, 20)
+                NavigationLink("Myles") {
+                    MylesView()
+                }
+                .font(.system(size: 40))
+                .font(.title)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.teal)
+                .cornerRadius(10)
+                .padding(.bottom, 20)
                 
             }
-            .font(.largeTitle)
-            .foregroundColor(.white)
-            .padding()
-            .background(Color.blue)
-            .cornerRadius(10)
-            .padding(.bottom, 20)
-            
+           
             
         }
     }
