@@ -11,6 +11,6 @@ import SwiftUI
 struct RajView: View {
     var body: some View {
         Image("Raj")
-        Text("Hi Im RJ and I'm the best golf playerof the group")
+        Text("Hi Im RJ and I'm the best golf player of the group")
     }
 }
