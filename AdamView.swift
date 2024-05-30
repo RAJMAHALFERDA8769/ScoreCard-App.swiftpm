@@ -10,6 +10,8 @@ import SwiftUI
 
 struct AdamView: View {
     var body: some View {
-        Text("Ok")
+        Text("My name is Adam. I am the GOAT of the Pro Golf League. Mateus and Myles are bottom feeders.")
+            .bold()
+            .padding()
     }
 }
