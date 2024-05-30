@@ -41,6 +41,16 @@ struct ContentView: View {
                     .background(Color.blue)
                     .cornerRadius(10)
                     Spacer()
+                    NavigationLink("About Us") {
+                        AboutUsView()
+                    }
+                    .font(.system(size: 40))
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(10)
+                    Spacer()
                  Spacer()
                 }
             }
