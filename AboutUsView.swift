@@ -49,6 +49,13 @@ struct AboutUsView: View {
                 
                 
             }
+            .font(.largeTitle)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.blue)
+            .cornerRadius(10)
+            .padding(.bottom, 20)
+            
             
         }
     }
