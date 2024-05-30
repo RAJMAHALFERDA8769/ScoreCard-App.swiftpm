@@ -15,36 +15,48 @@ struct AboutUsView: View {
                 .font(.largeTitle)
                 .bold()
             Spacer()
-            Text("Raj")
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.blue)
-                .cornerRadius(10)
-                .padding(.bottom, 20)
-            Text("Myles")
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.blue)
-                .cornerRadius(10)
-                .padding(.bottom, 20)
-            Text("Adam")
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.blue)
-                .cornerRadius(10)
-                .padding(.bottom, 20)
-            Text("Mateus")
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.blue)
-                .cornerRadius(10)
-                .padding(.bottom, 20)
             
+             NavigationLink("Raj") {
+                 RajView()
+             }
+             .font(.largeTitle)
+             .foregroundColor(.white)
+             .padding()
+             .background(Color.blue)
+             .cornerRadius(10)
+             .padding(.bottom, 20)
             
+             NavigationLink("Mateus") {
+                 MateusView()
+             }
+             .font(.largeTitle)
+             .foregroundColor(.white)
+             .padding()
+             .background(Color.blue)
+             .cornerRadius(10)
+             .padding(.bottom, 20)
+             
+             
+             NavigationLink("Adam") {
+                 AdamView()
+             }
+             .font(.largeTitle)
+             .foregroundColor(.white)
+             .padding()
+             .background(Color.blue)
+             .cornerRadius(10)
+             .padding(.bottom, 20)
+             
+             
+            NavigationLink("Myles") {
+                MylesView()
+            }
+            .font(.largeTitle)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.blue)
+            .cornerRadius(10)
+            .padding(.bottom, 20)
             
             
         }
