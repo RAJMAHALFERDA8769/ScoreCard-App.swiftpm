@@ -10,6 +10,6 @@ import SwiftUI
 
 struct RajView: View {
     var body: some View {
-        Text("Ok")
+        Image("Raj")
     }
 }
